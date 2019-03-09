@@ -32,18 +32,22 @@ class Model {
 		objectheight = myObjectHeight;
 	}
 	
+	/* Get function returns the x location of the orc. No inputs. */
 	int getX() {
 		return xloc;
 	}
 	
+	/* Get function returns the y location of the orc. No inputs. */
 	int getY() {
 		return yloc;
 	}
 	
+	/* Get function returns the direction of the orc. No inputs. */
 	Direction getDirect() {
 		return direction;
 	}
 	
+	/* Function updates location and direction based on the orc's current travel, making it bounce off walls. No inputs. */
 	void updateLocationAndDirection() {
 		switch (direction) {
 			case SOUTHEAST:
